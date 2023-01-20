@@ -1,0 +1,13 @@
+<root>
+
+  <!-- Only Mineral Water on Water Cooler -->
+  <!-- 3 in 6 to find 1 -->
+  <!-- 2 in 6 to find 2 -->
+  <!-- 1 in 6 to find 3 -->
+  <set xpath="//lootcontainer[@name='waterCooler']">
+    <item name="drinkJarPureMineralWater" count="1"/>
+    <item name="drinkJarPureMineralWater" count="1,2"/>
+    <item name="drinkJarPureMineralWater" count="1,3"/>
+  </set>
+
+</root>
