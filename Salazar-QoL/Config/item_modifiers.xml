@@ -1,0 +1,9 @@
+<salazar>
+
+  <!-- ================================================== -->
+  <!-- Dyes -->
+	<append xpath="//item_modifier[contains(@name,'Dye')]">
+		<property name="Stacknumber" value="100"/>
+	</append>
+
+</salazar>

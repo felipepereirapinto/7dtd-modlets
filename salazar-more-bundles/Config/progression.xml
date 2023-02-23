@@ -1,0 +1,13 @@
+<salazar>
+
+  <!-- ================================================== -->
+  <!-- Changes on Magazine Skills -->
+
+  <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
+    ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCementBundle,resourceConcreteMixBundle
+  </append>
+
+  <!-- TODO: resourceBulletCasingSteelBundle -->
+
+
+</salazar>

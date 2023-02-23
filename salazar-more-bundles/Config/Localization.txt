@@ -1,0 +1,11 @@
+﻿Key,english,brazilian
+
+resourceCrushedSandBundle,Stack of Crushed Sand (6000),Pilha de areia triturada (6000)
+resourceClayLumpBundle,Stack of Clay Lump (6000),Pilha de solo argiloso (6000)
+resourceCementBundle,Stack of Cement (6000),Pilha de cimento (6000)
+resourceConcreteMixBundle,Stack of Concrete Mix (6000),Pilha de concreto (6000)
+
+resourceCrushedSandBundle,This is a compact stack of crushed sand. Use this item to open and unpack it.,Uma pilha compacta de areia triturada. Use este item para abrir e descompactar.
+resourceClayLumpBundle,This is a compact stack of clay lump. Use this item to open and unpack it.,Uma pilha compacta de solo argiloso. Use este item para abrir e descompactar.
+resourceCementBundle,This is a compact stack of cement. Use this item to open and unpack it.,Uma pilha compacta de cimento. Use este item para abrir e descompactar.
+resourceConcreteMixBundle,This is a compact stack of concrete mix. Use this item to open and unpack it.,Uma pilha compacta de concreto. Use este item para abrir e descompactar.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Improved Generator"/>
+        <Description value="Upgrade the generator bank to the quest small generator mesh"/>
+        <Author value="Salazar"/>
+        <Version value="1.0.0"/>
+    </ModInfo>
+</xml>

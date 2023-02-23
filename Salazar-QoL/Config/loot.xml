@@ -1,0 +1,15 @@
+<salazar>
+
+  <!-- ================================================== -->
+
+  <!-- Mineral Water on Water Cooler -->
+  <!-- <set xpath="//lootcontainer[@name='waterCooler']">
+	  <item name="drinkJarPureMineralWater" count="1,5"/>
+  </set> -->
+
+  <!-- Beer on Wine Barrel -->
+  <set xpath="//lootcontainer[@name='wineBarrel']">
+    <item name="drinkJarBeer" count="1,5"/>
+  </set>
+
+</salazar>

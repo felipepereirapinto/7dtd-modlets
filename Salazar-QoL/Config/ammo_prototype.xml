@@ -1,0 +1,429 @@
+<salazar>
+  
+
+  <!-- ================================================== -->
+  <!-- Guns -->
+  <!-- Vanilla:
+    gunHandgunT0PipePistol  -6.4
+    gunHandgunT1Pistol      0
+    gunHandgunT3SMG5        3
+
+    ammo9mmBulletBall       32
+    ammo9mmBulletHP         35
+    ammo9mmBulletAP         38
+
+    gunHandgunT2Magnum44        0
+    gunHandgunT3DesertVulture   -2
+
+    ammo44MagnumBulletBall      70
+    ammo44MagnumBulletHP        77
+    ammo44MagnumBulletAP        84
+
+    gunShotgunT0PipeShotgun   -2.24
+    gunShotgunT1DoubleBarrel  0
+    gunShotgunT2PumpShotgun   0
+    gunShotgunT3AutoShotgun   0
+
+    ammoShotgunShell          10.1
+    ammoShotgunSlug           102
+    ammoShotgunBreachingSlug  96
+
+    gunRifleT0PipeRifle         -3
+    gunRifleT1HuntingRifle      8
+    gunRifleT2LeverActionRifle  12
+    gunRifleT3SniperRifle       17
+
+    gunMGT0PipeMachineGun       -16.6
+    gunMGT1AK47                 -11
+    gunMGT2TacticalAR           -7
+    gunMGT3M60                  -3
+
+    ammo762mmBulletBall         47
+    ammo762mmBulletHP           52
+    ammo762mmBulletAP           57
+
+    gunExplosivesT3RocketLauncher 0
+    ammoRocketHE                  420 (2500)
+    ammoRocketFrag                700 (20)
+  -->
+  <!-- Meu Mod:
+    9mm
+      Energy: 355-501 ft⋅lbf
+      dmg 32 entities - 6 blocks
+      gunHandgunT0PipePistol
+      gunHandgunT1Pistol
+      gunHandgunT3SMG5
+      501 -> 32
+
+    .44
+      Energy: 741-1,533 ft⋅lbf
+      gunHandgunT2Magnum44
+      gunHandgunT3DesertVulture
+      gunRifleT2LeverActionRifle
+      501 -> 32
+      1533 -> 98
+
+    5.56mm
+      Energy: 1,679-1,859 ft⋅lbf
+      gunMGT0PipeMachineGun
+      gunMGT2TacticalAR
+      gunMGT3M60
+      501 -> 32
+      1859 -> 119
+
+    7.62mm
+      Energy: 1,555-1,607 ft⋅lbf
+      gunRifleT0PipeRifle
+      gunRifleT1HuntingRifle
+      gunRifleT3SniperRifle
+      gunMGT1AK47
+      501 -> 32
+      1607 -> 103
+      
+    Shotgun
+      gunShotgunT0PipeShotgun
+      gunShotgunT1DoubleBarrel
+      gunShotgunT2PumpShotgun
+      gunShotgunT3AutoShotgun
+  -->
+
+  <!-- Add new ammo type: 5.56mm -->
+  <append xpath="/items">
+    <item name="ammo556mmBulletBall">
+      <property name="Extends" value="ammo762mmBulletBall"/>
+      <property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+      <property name="EconomicValue" value="11"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="000000"/>
+      <effect_group name="ammo556mmBulletBall" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+    </item>
+
+    <item name="ammo556mmBulletHP">
+      <property name="Extends" value="ammo556mmBulletBall"/>
+      <property name="DisplayType" value="ammoBulletHP"/>
+      <property name="EconomicValue" value="16"/>
+      <property name="DescriptionKey" value="ammoHiPowerGroupDesc"/>
+      <property name="UnlockedBy" value="perkSniperHPAmmo"/>
+      <property name="CustomIcon" value="ammo762mmBulletHP"/>
+      <property name="CustomIconTint" value="000000"/>
+
+      <effect_group name="ammo556mmBulletHP" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="52" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="EntityDamage" operation="base_add" value="-1.5">
+          <requirement name="ItemHasTags" tags="perkMachineGunner"/>
+        </passive_effect>
+        <passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+    </item>
+
+    <item name="ammo556mmBulletAP">
+      <property name="Extends" value="ammo556mmBulletBall"/>
+      <property name="DisplayType" value="ammoBulletAP"/>
+      <property name="EconomicValue" value="16"/>
+      <property name="DescriptionKey" value="ammoAPGroupDesc"/>
+      <property name="UnlockedBy" value="perkSniperAPAmmo"/>
+      <property name="CustomIcon" value="ammo762mmBulletAP"/>
+      <property name="CustomIconTint" value="000000"/>
+      <effect_group name="ammo556mmBulletAP" tiered="false">
+        <passive_effect name="EntityDamage" operation="base_set" value="57" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="EntityDamage" operation="base_add" value="-3">
+          <requirement name="ItemHasTags" tags="perkMachineGunner"/>
+        </passive_effect>
+        <passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDeadEye,perkMachineGunner"/>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.5"/>
+        <passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+        <passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+      </effect_group>
+
+      <effect_group name="perkPenetrator" tiered="false">
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+        <passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+          <requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+      </effect_group>
+    </item>
+  </append>
+
+
+<!--
+  <append xpath="//item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']">
+		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+  </append>
+ -->
+
+  <!-- ================================================== -->
+  <!-- Bows and Crossbows -->
+  <!--
+    gunBowT0PrimitiveBow      -6    =>  0
+    gunBowT1WoodenBow         0     =>  5
+    gunBowT3CompoundBow       9.15
+
+    ammoArrowStone            35
+    ammoArrowIron             38
+    ammoArrowSteelAP          42
+
+    gunBowT1IronCrossbow      0
+    gunBowT3CompoundCrossbow  13.5
+
+    ammoCrossbowBoltStone     50
+    ammoCrossbowBoltIron      59
+    ammoCrossbowBoltSteelAP   63
+  -->
+
+  <set xpath="//item[starts-with(@name, 'gunBow')]//property[@name='AutoReload']/@value">true</set>
+
+  <append xpath="//effect_group[@name='gunBowT0PrimitiveBow']">
+    <passive_effect name="EntityDamage" operation="base_add" value="0" tags="perkArchery"/> <!-- damage offset, from -6 -->
+    <passive_effect name="MagazineSize" operation="base_set" value="3" tags="perkArchery"/>
+  </append>
+
+  <append xpath="//effect_group[@name='gunBowT1WoodenBow']">
+    <passive_effect name="EntityDamage" operation="base_add" value="5" tags="perkArchery"/> <!-- damage offset, from 0 -->
+    <passive_effect name="MagazineSize" operation="base_set" value="3" tags="perkArchery"/>
+  </append>
+
+  <append xpath="//effect_group[@name='gunBowT3CompoundBow']">
+    <passive_effect name="MagazineSize" operation="base_set" value="3" tags="perkArchery"/>
+  </append>
+
+  <!-- ================================================== -->
+  <!-- Junk Turret -->
+  <!--
+    gunBotT2JunkTurret    0
+
+    ammoJunkTurretShell   2.1
+    ammoJunkTurretRegular 11.8
+    ammoJunkTurretAP      14.1
+  -->
+  <!-- Junk Turret Bot -->
+  <append xpath="//item[@name='gunBotT2JunkTurret']">
+    <property name="Tags" value="turretRanged,weapon,ranged,reloadPenalty,drumMagazine,attIntellect,perkTurrets,canHaveCosmetic,bottomAttachments"/>
+  </append>
+
+  <!-- ================================================== -->
+  <!-- Melee weapons -->
+
+  <!-- Stone Spear -->
+  <append xpath="//item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']">
+    <passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkJavelinMaster"/> <!-- from 10.3-->
+    <passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/> <!-- from 55 -->
+  </append>
+
+  <!-- Iron Spear -->
+  <append xpath="//item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']">
+    <passive_effect name="EntityDamage" operation="base_set" value="30" tags="perkJavelinMaster"/> <!-- from 12.4-->
+    <passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/> <!-- from 55 -->
+  </append>
+
+  <!-- Steel Spear -->
+  <append xpath="//item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']">
+    <passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkJavelinMaster"/> <!-- from 18.6 -->
+    <passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/> <!-- from 55 -->
+  </append>
+
+  <!-- Player and Zombies reach -->
+  <!-- <set xpath="//item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.4</set> --> <!-- from 1.65 -->
+  <!-- <set xpath="//item[@name='meleeHandPlayer']/property[@class='Action0']/property[@name='Range']/@value">1.65</set> --> <!-- from 1.65 -->
+
+  <!-- ================================================== -->
+  <!-- Tools -->
+
+  <!-- Iron T1 Axe -->
+  <append xpath="//item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']">
+    <passive_effect name="EntityDamage" operation="base_set" value="20" tags="perkMiner69r,perkDeepCuts"/> <!-- from 15.1 -->
+    <passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r,axe,perkDeepCuts"/> <!-- from 60 -->
+  </append>
+
+  <!-- Steel T2 Axe -->
+  <append xpath="//item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']">
+    <passive_effect name="EntityDamage" operation="base_set" value="40" tags="perkMiner69r"/> <!-- from 28.9 -->
+    <passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r,axe"/> <!-- from 47 -->
+  </append>
+
+  <!-- Chainsaw T3 Axe -->
+  <append xpath="//item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']">
+    <passive_effect name="EntityDamage" operation="base_set" value="20" tags="perkMiner69r"/> <!-- from 6 -->
+    <passive_effect name="BlockDamage" operation="base_set" value="50" tags="perkMiner69r"/> <!-- from 24.3 -->
+  </append>
+
+  <!-- Pick T3 Auger -->
+  <append xpath="//item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']">
+    <passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkMiner69r"/> <!-- from 4.2 -->
+    <passive_effect name="BlockDamage" operation="base_set" value="50" tags="perkMiner69r"/> <!-- from 20.7 -->
+  </append>
+
+  <!-- Salvage T1 Wrench -->
+  <append xpath="//item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']">
+    <passive_effect name="BlockDamage" operation="base_set" value="160" tags="perkSalvageOperations"/> <!-- from 38.5 -->
+  </append>
+
+  <!-- Salvage T2 Ratchet -->
+  <append xpath="//item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']">
+    <passive_effect name="BlockDamage" operation="base_set" value="200" tags="perkSalvageOperations"/> <!-- from 48.5 -->
+  </append>
+
+  <!-- Salvage T3 Impact Driver -->
+  <append xpath="//item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']">
+    <passive_effect name="BlockDamage" operation="base_set" value="240" tags="perkSalvageOperations"/> <!-- from 58 -->
+  </append>
+
+  <!-- ================================================== -->
+  <!-- Vehicles -->
+
+  <append xpath="//item[starts-with(@name, 'vehicle')]">
+    <property name="SellableToTrader" value="true"/>
+  </append>
+  <!-- Vehicles with 6 ModSlots -->
+  <append xpath="//effect_group[
+    starts-with(@name, 'vehicle') and
+    contains(@name, 'Placeable')
+  ]">
+		<passive_effect name="ModSlots" operation="base_set" value="6"/>
+  </append>
+
+
+  <!-- ================================================== -->
+  <!-- Mod Slots -->
+
+  <!-- All equipment with ModSlots equal Level-->
+  <append xpath="//effect_group[
+    starts-with(@name, 'meleeTool') or
+    starts-with(@name, 'meleeWpn') or
+    starts-with(@name, 'gunHandgun') or
+    starts-with(@name, 'gunShotgun') or
+    starts-with(@name, 'gunRifle') or
+    starts-with(@name, 'gunMGT') or
+    starts-with(@name, 'gunExplosives') or
+    starts-with(@name, 'gunBow') or
+    starts-with(@name, 'gunBot') or 
+    @name='cloth armor' or 
+    @name='leather armor' or 
+    @name='military armor' or 
+    @name='scrap armor' or
+    @name='iron armor' or
+    @name='steel armor' or
+    @name='leather w scrap AR' or
+    @name='military without penalties']">
+    <passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+  </append>
+
+  <!-- ================================================== -->
+  <!-- Stacks -->
+
+  <!-- Casino Coin -->
+  <set xpath="//item[@name='casinoCoin']/property[@name='Stacknumber']/@value">100000</set>  <!-- from 20k -->
+
+  <!-- Old Cash -->
+  <set xpath="//item[@name='oldCash']/property[@name='Stacknumber']/@value">100000</set>  <!-- from 10k -->
+
+  <!-- Small Engine -->
+  <set xpath="//item[@name='smallEngine']/property[@name='Stacknumber']/@value">10</set>  <!-- from 1 -->
+
+  <!-- ================================================== -->
+  <!-- Schematics -->
+
+  <!-- Schematics Group -->
+  <append xpath="//item[starts-with(@name, 'mod') and contains(@name, 'Schematic')]">
+    <property name="Group" value="Decor/Miscellaneous" />
+  </append>
+
+  <!-- ================================================== -->
+  <!-- Equipment Parts -->
+
+  <!-- Display as Unlocked by perkAdvancedEngineering -->
+  <append xpath="//item[
+    @name='gunBowT1WoodenBowParts' or
+    @name='gunHandgunT1PistolParts' or
+    @name='gunShotgunT1DoubleBarrelParts' or
+    @name='gunRifleT1HuntingRifleParts' or
+    @name='gunMGT1AK47Parts' or
+    @name='gunExplosivesT3RocketLauncherParts' or
+    @name='gunBotRoboticsParts' or
+    @name='resourceMechanicalParts' or
+    @name='resourceElectricParts' or
+    @name='meleeWpnBatonT2StunBatonParts' or
+    @name='meleeWpnKnucklesT3SteelKnucklesParts' or
+    @name='meleeToolAxeT3ChainsawParts' or
+    @name='meleeWpnBladeT3MacheteParts' or
+    @name='meleeWpnSpearT3SteelSpearParts' or
+    @name='meleeWpnClubT3SteelClubParts' or
+    @name='meleeWpnSledgeT3SteelSledgehammerParts' or
+    @name='meleeToolAllSteelParts' or
+    @name='armorMilitarySetParts' or
+    @name='armorSteelSetParts'
+  ]">
+  	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+  </append>
+
+  <!-- Display what Unlocks Equipment Parts -->
+  <append xpath="//item[@name='gunMGT1AK47Parts']">
+    <property name="UnlockedBy" value="perkMachineGunner"/>
+  </append>
+  <append xpath="//item[@name='gunHandgunT1PistolParts']">
+    <property name="UnlockedBy" value="perkGunslinger"/>
+  </append>
+  <append xpath="//item[@name='gunRifleT1HuntingRifleParts']">
+  	<property name="UnlockedBy" value="perkDeadEye"/>
+  </append>
+  <append xpath="//item[@name='gunShotgunT1DoubleBarrelParts']">
+    <property name="UnlockedBy" value="perkBoomstick"/>
+  </append>
+  <append xpath="//item[@name='gunBowT1WoodenBowParts']">
+    <property name="UnlockedBy" value="perkArchery"/>
+  </append>
+  <append xpath="//item[@name='gunExplosivesT3RocketLauncherParts']">
+    <property name="UnlockedBy" value="perkDemolitionsExpert"/>
+  </append>
+  <append xpath="//item[@name='gunBotRoboticsParts']">
+	  <property name="UnlockedBy" value="perkTurrets"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnBatonT2StunBatonParts']">
+    <property name="UnlockedBy" value="perkElectrocutioner"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+    <property name="UnlockedBy" value="perkBrawler"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnBladeT3MacheteParts']">
+    <property name="UnlockedBy" value="perkDeepCuts"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnSpearT3SteelSpearParts']">
+    <property name="UnlockedBy" value="perkJavelinMaster"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnClubT3SteelClubParts']">
+    <property name="UnlockedBy" value="perkPummelPete"/>
+  </append>
+  <append xpath="//item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+    <property name="UnlockedBy" value="perkSkullCrusher"/>
+  </append>
+  <append xpath="//item[
+    @name='meleeToolAllSteelParts' or
+    @name='meleeToolAxeT3ChainsawParts'
+  ]">
+    <property name="UnlockedBy" value="perkMiner69r"/>
+  </append>
+  <append xpath="//item[@name='armorMilitarySetParts']">
+    <property name="UnlockedBy" value="perkLightArmor"/>
+  </append>
+  <append xpath="//item[@name='armorSteelSetParts']">
+    <property name="UnlockedBy" value="perkHeavyArmor"/>
+  </append>
+  <append xpath="//item[@name='resourceMechanicalParts']">
+    <property name="UnlockedBy" value="perkGreaseMonkey"/>
+  </append>
+  <append xpath="//item[@name='resourceElectricParts']">
+    <property name="UnlockedBy" value="perkAdvancedEngineering"/>
+  </append>
+
+</salazar>

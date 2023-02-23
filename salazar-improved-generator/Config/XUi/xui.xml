@@ -1,0 +1,25 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Vanilla Generator -->
+	<!-- powersource / XUiC_PowerSourceWindowGroup < windowPowerSourceSlots -->
+
+	<!-- ================================================== -->
+	<!-- Small Generator -->
+	<!-- workstation_GeneratorSmallT1 < XUiC_WorkstationWindowGroup > windowPowerSourceSlots_4x3 -->
+<!-- 
+	<append xpath="//ruleset[@name='default']">
+		
+		<window_group name="workstation_GeneratorSmallT1" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlots_4x3" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+	</append>
+ -->
+</root>
+
+
+
+		

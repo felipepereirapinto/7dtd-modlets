@@ -1,0 +1,259 @@
+<salazar>
+
+<!-- ================================================== -->
+<!-- Pick UP Stuff -->
+
+	<!-- Plants -->
+		<append xpath="//block[starts-with(@name, 'plantedMushroom3Harvest')]">
+			<property name="DowngradeBlock" value="plantedMushroom1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedYucca3Harvest')]">
+			<property name="DowngradeBlock" value="plantedYucca1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedCotton3Harvest')]">
+			<property name="DowngradeBlock" value="plantedCotton1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedCoffee3Harvest')]">
+			<property name="DowngradeBlock" value="plantedCoffee1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedGoldenrod3Harvest')]">
+			<property name="DowngradeBlock" value="plantedGoldenrod1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedAloe3Harvest')]">
+			<property name="DowngradeBlock" value="plantedAloe1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedBlueberry3Harvest')]">
+			<property name="DowngradeBlock" value="plantedBlueberry1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedPotato3Harvest')]">
+			<property name="DowngradeBlock" value="plantedPotato1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedChrysanthemum3Harvest')]">
+			<property name="DowngradeBlock" value="plantedChrysanthemum1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedCorn3Harvest')]">
+			<property name="DowngradeBlock" value="plantedCorn1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedGraceCorn3Harvest')]">
+			<property name="DowngradeBlock" value="plantedGraceCorn1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedHop3Harvest')]">
+			<property name="DowngradeBlock" value="plantedHop1"/>
+		</append>
+		<append xpath="//block[starts-with(@name, 'plantedPumpkin3Harvest')]">
+			<property name="DowngradeBlock" value="plantedPumpkin1"/>
+		</append>
+
+	<!-- Trees -->
+		<append xpath="//block[
+			@name='treePlantedOak08m' or
+			@name='treePlantedOak16m' or
+			@name='treePlantedOak27m' or
+			@name='treePlantedOak41m'
+		]">
+			<property name="DowngradeBlock" value="treePlantedOak1m"/>
+			<property name="Class" value=""/>
+		</append>
+
+		<append xpath="//block[
+			@name='treePlantedMountainPine12m' or
+			@name='treePlantedMountainPine19m' or
+			@name='treePlantedMountainPine27m' or
+			@name='treePlantedMountainPine41m'
+		]">
+			<property name="Class" value=""/>
+			<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+		</append>
+
+		<append xpath="//block[
+			@name='treePlantedWinterPine6m' or
+			@name='treePlantedWinterPine13m' or
+			@name='treePlantedWinterPine19m' or
+			@name='treePlantedWinterPine28m'
+		]">
+			<property name="Class" value=""/>
+			<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+		</append>
+
+	<!-- Traps -->
+
+		<append xpath="//block[
+			@name='barbedFence' or
+			@name='barbedWireSheet' or
+			@name='trapSpikesWoodMaster' or
+			@name='trapSpikesScrapIronMaster'
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="500"/>
+		</append>
+
+	<!-- Garden -->
+
+		<append xpath="//block[
+			@name='birdBathPlanter' or
+			@name='decoCowSkull'
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Weight" value="20"/>
+		</append>
+
+	<!-- Farm Plots -->
+	
+		<remove xpath="//block[@name='farmPlotBlock']/drop[@event='Harvest']"/>
+		<append xpath="//block[@name='farmPlotBlock']">
+			<drop event="Destroy" name="farmPlotBlockVariantHelper" count="1"/>
+		</append>
+
+	<!-- Resource Piles -->
+
+		<append xpath="//block[
+			@name='scrapMetalPile' or
+			contains(@name,'cinderBlocks') or
+			starts-with(@name, 'hayBale')
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Weight" value="40"/>
+		</append>
+
+		<append xpath="//block[@name='driftwood']">
+			<property name="CanPickup" value="true"/>
+			<property name="FuelValue" value="300"/>
+			<property name="Weight" value="30"/>
+		</append>
+
+	<!-- Exercise Equipment -->
+
+		<append xpath="//block[
+			@name='decoBenchPress' or
+			@name='decoStationaryBike' or
+			@name='decoTreadmill' or
+			@name='decoWeightBar' or
+			@name='decoBasketBallHoop' or
+			@name='decoMetalSlide' or
+			@name='decoSwingSet'
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="500"/> <!-- 100 -->
+			<property name="Weight" value="60"/>
+		</append>
+
+	<!-- Eletronics -->
+		
+		<append xpath="//block[
+			starts-with(@name, 'decoComputer') or
+			starts-with(@name, 'decoLaptop') or
+			starts-with(@name, 'tv')
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="EconomicValue" value="500"/> <!-- 100 -->
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Weight" value="5"/>
+		</append>
+
+	<!-- Paintings and Posters -->
+		
+		<append xpath="//block[
+			starts-with(@name, 'painting') or
+			starts-with(@name, 'signPoster') or
+			starts-with(@name, 'signPosterMovie')
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="50"/> <!-- 10 -->
+			<property name="Weight" value="1"/>
+		</append>
+
+	<!-- Beds -->
+
+		<append xpath="//block[
+			@name='bed02' or
+			starts-with(@name, 'bunkBed') or
+			starts-with(@name, 'mattress') or
+			@name='gurneyBed' or
+			@name='hospitalBed'
+		]">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Weight" value="10"/>
+		</append>
+
+		<append xpath="//block[@name='bunkBedFrame']">
+			<property name="CanPickup" value="true"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="750"/> <!-- 250 -->
+			<property name="Weight" value="10"/>
+		</append>
+
+	<!-- Illumination -->
+
+		<append xpath="//block[
+			@name='lanternDecorLight' or
+			@name='lanternLight_player'
+		]">
+			<property name="CanPickup" value="true" param1="lanternLight_player"/>
+		</append>
+		<append xpath="//block[
+			@name='burningBarrel' or
+			@name='burningBarrelPlayer'
+		]">
+			<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+		</append>
+
+<!-- ================================================== -->
+<!-- Blocks improvements: stack, and sell -->
+	
+	<!-- Work Stations -->
+
+		<append xpath="//block[
+			@name='batterybank' or
+			@name='generatorbank' or
+			@name='solarbank' or
+			@name='campfire' or
+			@name='forge' or
+			@name='workbench' or
+			@name='cementMixer' or
+			@name='chemistryStation'
+		]">
+			<property name="Stacknumber" value="500"/> <!-- 100 -->
+			<property name="SellableToTrader" value="true"/>
+		</append>
+
+	<!-- Decoration -->
+
+		<append xpath="//block[@name='barracksChair']">
+			<property name="Stacknumber" value="500"/> <!-- default 10 -->
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+		</append>
+		
+		<append xpath="//block[starts-with(@name, 'officeChair')]">
+			<property name="Stacknumber" value="500"/> <!-- default 10 -->
+		</append>
+
+		<!-- Bridges, doors x500 -->
+
+		<set xpath="//block[
+			starts-with(@name, 'garageDoor') or
+			starts-with(@name, 'metalReinforcedWoodDrawBridge') or
+			starts-with(@name, 'rollUpDoor')
+		]/property[@name='Stacknumber']/@value">500</set>
+
+<!-- ================================================== -->
+<!-- Adding LootList -->
+
+	<append xpath="//block[@name='wineBarrel']">
+		<property name="LootList" value="wineBarrel"/>
+	</append>
+	
+</salazar>
