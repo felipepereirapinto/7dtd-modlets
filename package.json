@@ -1,0 +1,23 @@
+{
+  "name": "7dtd-a20-modlets",
+  "version": "1.0.0",
+  "description": "This is a test. There's nothing to see here",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run delete && npm run copy",
+    "delete": "rm -rf ../salazar-*",
+    "copy": "cp -r ./salazar-* ../",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipepereirapinto/7dtd-a20-modlets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipepereirapinto/7dtd-a20-modlets/issues"
+  },
+  "homepage": "https://github.com/felipepereirapinto/7dtd-a20-modlets#readme"
+}
