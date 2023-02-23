@@ -84,37 +84,41 @@
 
   <append xpath="/items">
 
-      <item name="resourceBulletCasingSteelBundle">
-        <property name="Extends" value="resourceRockSmallBundle"/>
-        <property name="CustomIcon" value="resourceBulletCasingSteel"/>
-        <property class="Action0">
-          <property name="Create_item" value="resourceBulletCasingSteel"/>
-          <property name="Create_item_count" value="6000"/>
-        </property>
-      </item>
+    <item name="resourceBulletCasingSteelBundle">
+      <property name="Extends" value="resourceRockSmallBundle"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletCasingSteel"/>
+        <property name="Create_item_count" value="6000"/>
+      </property>
+    </item>
 
     <item name="ammoBundle9mmBulletSteel">
       <property name="Extends" value="ammoBundle9mmBulletAP"/>
-      <property name="CustomIcon" value="ammo9mmBulletSteel"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property class="Action0">
         <property name="Create_item" value="ammo9mmBulletSteel"/>
       </property>
     </item>
     <item name="ammoBundle44MagnumBulletSteel">
       <property name="Extends" value="ammoBundle44MagnumBulletBall"/>
-      <property name="CustomIcon" value="ammo44MagnumBulletSteel"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property class="Action0">
         <property name="Create_item" value="ammo44MagnumBulletSteel"/>
       </property>
     </item>
     <item name="ammoBundle762mmBulletFMJSteel">
       <property name="Extends" value="ammoBundle762mmBulletBall"/>
-      <property name="CustomIcon" value="ammo762mmBulletFMJSteel"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="a0a0ff"/>
       <property class="Action0">
         <property name="Create_item" value="ammo762mmBulletFMJSteel"/>
       </property>
     </item>
-    
+
   </append>
 
 </root>
