@@ -17,3 +17,6 @@ resourceConcreteMixBundleDesc,This is a compact stack of concrete mix. Use this 
 resourceBuckshotBundleDesc,This is a compact stack of buckshot. Use this item to open and unpack it.,Uma pilha compacta de balote. Use este item para abrir e descompactar.
 resourceBulletCasingBundleDesc,This is a compact stack of bullet casing. Use this item to open and unpack it.,Uma pilha compacta de revestimento de balas. Use este item para abrir e descompactar.
 resourceBulletTipBundleDesc,This is a compact stack of bullet tip. Use this item to open and unpack it.,Uma pilha compacta de ponta de bala. Use este item para abrir e descompactar.
+
+resourceBulletCasingBundle,Stack of Bullet Casing, Steel (6000),Pilha de revestimento de balas de aço (6000)
+resourceBulletCasingBundleDesc,This is a compact stack of steel bullet casing. Use this item to open and unpack it.,Uma pilha compacta de revestimento de balas de aço. Use este item para abrir e descompactar.

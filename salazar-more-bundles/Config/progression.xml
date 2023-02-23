@@ -7,6 +7,10 @@
     ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCobblestonesBundle,resourceCementBundle,resourceConcreteMixBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle
   </append>
 
-  <!-- TODO: resourceBulletCasingSteelBundle -->
+  <!-- ================================================== -->
+	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
+  <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
+    ,resourceBulletCasingSteelBundle
+  </append>
 
 </salazar>

@@ -139,12 +139,16 @@
 			<ingredient name="ammoCrossbowBoltStone" count="100"/>
 		</recipe>
 
-		<!-- KHA20-SteelAmmo Bundles -->
+	</append>
 
-		<!-- TODO: resourceBulletCasingSteelBundle -->
-		<!-- <recipe name="resourceBulletCasingSteelBundle" count="1" craft_time="10">
+	<!-- ================================================== -->
+	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
+
+	<append xpath="/recipes">
+	
+		<recipe name="resourceBulletCasingSteelBundle" count="1" craft_time="10" tags="learnable">
 			<ingredient name="resourceBulletCasingSteel" count="6000"/>
-		</recipe> -->
+		</recipe>
 		<recipe name="ammoBundle9mmBulletSteel" count="1" craft_time="10">
 			<ingredient name="ammo9mmBulletSteel" count="100"/>
 		</recipe>
