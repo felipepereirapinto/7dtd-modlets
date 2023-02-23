@@ -5,8 +5,6 @@
   
   <append xpath="/items">
 
-
-
     <item name="resourceCrushedSandBundle">
       <property name="Extends" value="resourceRockSmallBundle"/>
       <property name="CustomIcon" value="resourceCrushedSand"/>
@@ -51,6 +49,33 @@
         <property name="Create_item_count" value="6000"/>
       </property>
     </item>
+
+    <item name="resourceBuckshotBundle">
+      <property name="Extends" value="resourceRockSmallBundle"/>
+      <property name="CustomIcon" value="resourceBuckshot"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBuckshot"/>
+        <property name="Create_item_count" value="6000"/>
+      </property>
+    </item>
+
+    <item name="resourceBulletCasingBundle">
+      <property name="Extends" value="resourceRockSmallBundle"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletCasing"/>
+        <property name="Create_item_count" value="6000"/>
+      </property>
+    </item>
+
+    <item name="resourceBulletTipBundle">
+      <property name="Extends" value="resourceRockSmallBundle"/>
+      <property name="CustomIcon" value="resourceBulletTip"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceBulletTip"/>
+        <property name="Create_item_count" value="6000"/>
+      </property>
+    </item>
   </append>
 
   <!-- ================================================== -->
@@ -58,6 +83,8 @@
   <append xpath="/items">
 
     <!-- TODO: resourceBulletCasingSteelBundle -->
+    <!-- resourceBulletCasing -->
+    <!-- resourceBulletCasingSteelBundle -->
 
     <item name="ammoBundle9mmBulletSteel">
       <property name="Extends" value="ammoBundle9mmBulletAP"/>

@@ -5,9 +5,15 @@ resourceClayLumpBundle,Stack of Clay Lump (6000),Pilha de solo argiloso (6000)
 resourceCobblestonesBundle,Stack of Cobblestone Rocks (6000),Pilha de pedras portuguesas (6000)
 resourceCementBundle,Stack of Cement (6000),Pilha de cimento (6000)
 resourceConcreteMixBundle,Stack of Concrete Mix (6000),Pilha de concreto (6000)
+resourceBuckshotBundle,Stack of Buckshot (6000),Pilha de balote (6000)
+resourceBulletCasingBundle,Stack of Bullet Casing (6000),Pilha de revestimento de balas (6000)
+resourceBulletTipBundle,Stack of Bullet Tip (6000),Pilha de ponta de bala (6000)
 
 resourceCrushedSandBundleDesc,This is a compact stack of crushed sand. Use this item to open and unpack it.,Uma pilha compacta de areia triturada. Use este item para abrir e descompactar.
 resourceClayLumpBundleDesc,This is a compact stack of clay lump. Use this item to open and unpack it.,Uma pilha compacta de solo argiloso. Use este item para abrir e descompactar.
 resourceCobblestonesBundleDesc,This is a compact stack of cobblestone rocks. Use this item to open and unpack it.,Uma pilha compacta de pedras portuguesas. Use este item para abrir e descompactar.
 resourceCementBundleDesc,This is a compact stack of cement. Use this item to open and unpack it.,Uma pilha compacta de cimento. Use este item para abrir e descompactar.
 resourceConcreteMixBundleDesc,This is a compact stack of concrete mix. Use this item to open and unpack it.,Uma pilha compacta de concreto. Use este item para abrir e descompactar.
+resourceBuckshotBundleDesc,This is a compact stack of buckshot. Use this item to open and unpack it.,Uma pilha compacta de balote. Use este item para abrir e descompactar.
+resourceBulletCasingBundleDesc,This is a compact stack of bullet casing. Use this item to open and unpack it.,Uma pilha compacta de revestimento de balas. Use este item para abrir e descompactar.
+resourceBulletTipBundleDesc,This is a compact stack of bullet tip. Use this item to open and unpack it.,Uma pilha compacta de ponta de bala. Use este item para abrir e descompactar.

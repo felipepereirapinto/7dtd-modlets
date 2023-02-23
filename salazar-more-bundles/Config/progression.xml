@@ -4,10 +4,9 @@
   <!-- Changes on Magazine Skills -->
 
   <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
-    ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCobblestonesBundle,resourceCementBundle,resourceConcreteMixBundle
+    ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCobblestonesBundle,resourceCementBundle,resourceConcreteMixBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle
   </append>
 
   <!-- TODO: resourceBulletCasingSteelBundle -->
-
 
 </salazar>

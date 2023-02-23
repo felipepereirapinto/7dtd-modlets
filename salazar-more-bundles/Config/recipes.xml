@@ -33,6 +33,18 @@
 			<ingredient name="resourceConcreteMix" count="6000"/>
 		</recipe>
 
+		<recipe name="resourceBuckshotBundleBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBuckshotBundle" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBulletCasing" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBulletTip" count="6000"/>
+		</recipe>
+
 	</append>
 
 	<!-- ================================================== -->
