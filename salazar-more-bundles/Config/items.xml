@@ -4,6 +4,9 @@
   <!-- Resource Bundles -->
   
   <append xpath="/items">
+
+
+
     <item name="resourceCrushedSandBundle">
       <property name="Extends" value="resourceRockSmallBundle"/>
       <property name="CustomIcon" value="resourceCrushedSand"/>
@@ -18,6 +21,15 @@
       <property name="CustomIcon" value="resourceClayLump"/>
       <property class="Action0">
         <property name="Create_item" value="resourceClayLump"/>
+        <property name="Create_item_count" value="6000"/>
+      </property>
+    </item>
+
+    <item name="resourceCobblestonesBundle">
+      <property name="Extends" value="resourceRockSmallBundle"/>
+      <property name="CustomIcon" value="resourceCobblestones"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceCobblestones"/>
         <property name="Create_item_count" value="6000"/>
       </property>
     </item>

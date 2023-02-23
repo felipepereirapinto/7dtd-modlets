@@ -21,6 +21,10 @@
 			<ingredient name="resourceClayLump" count="6000"/>
 		</recipe>
 
+		<recipe name="resourceCobblestonesBundleBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCobblestonesBundle" count="6000"/>
+		</recipe>
+
 		<recipe name="resourceCementBundle" count="1" craft_time="10" tags="learnable">
 			<ingredient name="resourceCement" count="6000"/>
 		</recipe>
