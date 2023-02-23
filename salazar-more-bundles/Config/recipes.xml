@@ -21,8 +21,8 @@
 			<ingredient name="resourceClayLump" count="6000"/>
 		</recipe>
 
-		<recipe name="resourceCobblestonesBundleBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceCobblestonesBundle" count="6000"/>
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCobblestones" count="6000"/>
 		</recipe>
 
 		<recipe name="resourceCementBundle" count="1" craft_time="10" tags="learnable">
@@ -33,8 +33,8 @@
 			<ingredient name="resourceConcreteMix" count="6000"/>
 		</recipe>
 
-		<recipe name="resourceBuckshotBundleBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceBuckshotBundle" count="6000"/>
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBuckshot" count="6000"/>
 		</recipe>
 
 		<recipe name="resourceBulletCasingBundle" count="1" craft_time="10" tags="learnable">
@@ -145,7 +145,7 @@
 	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
 
 	<append xpath="/recipes">
-	
+
 		<recipe name="resourceBulletCasingSteelBundle" count="1" craft_time="10" tags="learnable">
 			<ingredient name="resourceBulletCasingSteel" count="6000"/>
 		</recipe>
