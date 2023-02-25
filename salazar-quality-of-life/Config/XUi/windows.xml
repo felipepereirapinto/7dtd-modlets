@@ -1,4 +1,4 @@
-<salazar>
+<root>
 
 	<!-- Show Health Bar -->
 	<set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
@@ -11,4 +11,4 @@
 		<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
 	</append>
 
-</salazar>
+</root>

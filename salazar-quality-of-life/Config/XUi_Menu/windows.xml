@@ -1,4 +1,4 @@
-<salazar>
+<root>
 
 	<!-- Continue Game -->
 	<append xpath="//window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsGeneral']/grid[@pos='6,-40']">
@@ -42,4 +42,4 @@
 	<!-- Multiplayer Options -->
 	<set xpath="//window[@name='serverBrowser']/panel[@name='serverfilters']/panel[@controller='TabSelector']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid/browsergameoptioncombined[@name='PartySharedKillRange']/@values">0, 100, 500, 1000, 5000, 10000, 20000, 50000, 100000</set>
 
-</salazar>
+</root>
