@@ -1,0 +1,9 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Time Open -->
+
+	<set xpath="//trader_info[@id='1' or @id='2' or @id='6' or @id='7' or @id='8']/@open_time">4:00</set>
+	<set xpath="//trader_info[@id='1' or @id='2' or @id='6' or @id='7' or @id='8']/@close_time">22:00</set>
+
+</root>
