@@ -1,9 +1,8 @@
-<salazar>
+<root>
 
 <!-- ================================================== -->
-<!-- Pick UP Stuff -->
-
-	<!-- Plants -->
+<!-- Replanting Stuff -->
+	<!-- Crops -->
 		<append xpath="//block[starts-with(@name, 'plantedMushroom3Harvest')]">
 			<property name="DowngradeBlock" value="plantedMushroom1"/>
 		</append>
@@ -75,6 +74,8 @@
 			<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
 		</append>
 
+<!-- ================================================== -->
+<!-- Pick-Up Stuff -->
 	<!-- Traps -->
 
 		<append xpath="//block[
@@ -212,7 +213,6 @@
 
 <!-- ================================================== -->
 <!-- Blocks improvements: stack, and sell -->
-	
 	<!-- Work Stations -->
 
 		<append xpath="//block[
@@ -256,4 +256,4 @@
 		<property name="LootList" value="wineBarrel"/>
 	</append>
 	
-</salazar>
+</root>
