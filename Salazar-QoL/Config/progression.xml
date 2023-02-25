@@ -6,21 +6,10 @@
   <!-- <setattribute xpath="//level" name="max_level">100</setattribute> -->
 
   <!-- ================================================== -->
-  <!-- Learn Equipment Parts with Perks -->
-
-  
-  <!-- ================================================== -->
   <!-- Changes on Perks -->
 
   <append xpath="//perk[@name='perkLivingOffTheLand']/effect_group">
     <passive_effect name="HarvestCount" operation="perc_add" level="1,2,3" value="1,2,3" tags="cropHarvest,wildCropsHarvest"/>
-  </append>
-
-  <!-- ================================================== -->
-  <!-- Changes on Magazine Skills -->
-
-  <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
-    ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCementBundle,resourceConcreteMixBundle
   </append>
 
 </salazar>

@@ -3,7 +3,7 @@
   <!-- ================================================== -->
   <!-- Dyes -->
 	<append xpath="//item_modifier[contains(@name,'Dye')]">
-		<property name="Stacknumber" value="100"/>
+		<property name="Stacknumber" value="6000"/>
 	</append>
 
 </salazar>
