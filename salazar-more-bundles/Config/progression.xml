@@ -3,13 +3,13 @@
   <!-- ================================================== -->
   <!-- Changes on Magazine Skills -->
 
-  <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
+  <append xpath="//perk[@name='perkArtOfMiningPallets']//@tags">
     ,resourceCrushedSandBundle,resourceClayLumpBundle,resourceCobblestonesBundle,resourceCementBundle,resourceConcreteMixBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle
   </append>
 
   <!-- ================================================== -->
 	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
-  <append xpath="//perk[@name='perkArtOfMiningPallets']/passive_effect/@tags">
+  <append xpath="//perk[@name='perkArtOfMiningPallets']//@tags">
     ,resourceBulletCasingSteelBundle
   </append>
 
