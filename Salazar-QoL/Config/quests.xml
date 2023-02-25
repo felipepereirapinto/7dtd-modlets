@@ -1,4 +1,4 @@
-<salazar>
+<root>
 
 	<!-- ================================================== -->
 	<!-- Starter Quest -->
@@ -17,4 +17,4 @@
 	<!-- Increase Quest Radius to 10km -->
 	<set xpath="//objective[@type='StayWithin']/property[@name='radius']/@value">10000</set>
 
-</salazar>
+</root>
