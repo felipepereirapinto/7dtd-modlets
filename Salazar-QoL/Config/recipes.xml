@@ -565,39 +565,6 @@
 			<ingredient name="ammoCrossbowBoltStone" count="100"/>
 		</recipe>
 
-		<!-- TODO: Steel Ammo (other mod) -->
-
-	</append>
-
-	<!-- ================================================== -->
-	<!-- Resource Bundles -->
-
-	<append xpath="/recipes">
-
-		<recipe name="ammoGasCanBundle" count="1" craft_time="10">
-			<ingredient name="ammoGasCan" count="10000"/>
-		</recipe>
-
-		<recipe name="resourceGunPowderBundle" count="1" craft_time="10">
-			<ingredient name="resourceGunPowder" count="1000"/>
-		</recipe>
-
-		<recipe name="resourceCrushedSandBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceCrushedSand" count="6000"/>
-		</recipe>
-
-		<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceClayLump" count="6000"/>
-		</recipe>
-
-		<recipe name="resourceCementBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceCement" count="6000"/>
-		</recipe>
-
-		<recipe name="resourceConcreteMixBundle" count="1" craft_time="10" tags="learnable">
-			<ingredient name="resourceConcreteMix" count="6000"/>
-		</recipe>
-
 	</append>
 
 	<!-- ================================================== -->
