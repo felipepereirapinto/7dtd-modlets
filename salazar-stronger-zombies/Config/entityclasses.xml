@@ -1,0 +1,12 @@
+<root>
+	<append xpath="/entity_classes">
+
+		<!-- <entity_class name="zombieArleneRadiated2" extends="zombieArleneRadiated">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="perc_add" value="1,1"/>
+			</effect_group>
+		</entity_class> -->
+
+	</append>
+</root>

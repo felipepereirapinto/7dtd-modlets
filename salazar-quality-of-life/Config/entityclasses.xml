@@ -1,8 +1,7 @@
-<salazar>
+<root>
 
 	<!-- ======================================== -->
-	<!-- Starter Equipment ====================== -->
-	<!-- ======================================== -->
+	<!-- Starter Equipment -->
 
 	<setattribute xpath="//entity_class[@name='playerMale']/property[
 		@name='ItemsOnEnterGame.GameModeSurvival' or
@@ -19,4 +18,4 @@
 		apparelDenimPants
 	</setattribute>
 
-</salazar>
+</root>
