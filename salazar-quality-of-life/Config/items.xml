@@ -93,22 +93,6 @@
     <passive_effect name="BlockDamage" operation="base_set" value="50" tags="perkMiner69r"/> <!-- from 20.7 -->
   </append>
 
-  <!-- Salvage T1 Wrench -->
-  <append xpath="//effect_group[@name='meleeToolSalvageT1Wrench']">
-    <passive_effect name="BlockDamage" operation="base_set" value="160" tags="perkSalvageOperations"/> <!-- from 38.5 -->
-  </append>
-
-  <!-- Salvage T2 Ratchet -->
-  <append xpath="//effect_group[@name='meleeToolSalvageT2Ratchet']">
-    <passive_effect name="BlockDamage" operation="base_set" value="200" tags="perkSalvageOperations"/> <!-- from 48.5 -->
-  </append>
-
-  <!-- Salvage T3 Impact Driver -->
-  <append xpath="//effect_group[@name='meleeToolSalvageT3ImpactDriver']">
-    <passive_effect name="BlockDamage" operation="base_set" value="240" tags="perkSalvageOperations"/> <!-- from 58 -->
-  </append>
-
-
   <!-- ================================================== -->
   <!-- Throwables -->
 

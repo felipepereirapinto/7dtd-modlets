@@ -1,0 +1,8 @@
+<root>
+
+		<set xpath="//block[
+			@name='cntCar03SedanDamage0Master' or
+			@name='cntCar03SedanDamage1Master'
+		]/property[@name='PassThroughDamage']/@value">false</set>
+	
+</root>
