@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Feral Headshot Only"/>
-        <Description value="Ferals can only be kills with guns or weapons with headshots."/>
-        <Author value="Salazar"/>
-        <Version value="1.0.0"/>
-    </ModInfo>
-</xml>
