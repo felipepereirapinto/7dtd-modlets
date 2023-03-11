@@ -1,19 +1,20 @@
 <root>
 
 	<!-- Radiated zombies can only be killed with headshots, unless weapon has Rad Remover -->
+	<!-- Demolition Zombie and Grace are unnafected by the Rad Remover -->
 	<append xpath="//entity_class[@name='playerMale']">
 		<effect_group>
 			<passive_effect name="HeadShotOnly" operation="base_set" value="1">
 				<requirement name="EntityTagCompare" target="other" tags="radiated,boss"/>
-				<!-- (Optionally) anti-rad mod removes it -->
-				<requirement name="!HasBuff" buff="buffRadiatedRegenBlock" target="other"/>
+				<!-- (Optionally) anti-rad mod removes it - uncomment to work -->
+				<!-- <requirement name="!HasBuff" buff="buffRadiatedRegenBlock" target="other"/> -->
 			</passive_effect>
 		</effect_group>
 	</append>
 		
 	<!-- 150% XP increase for radiated zombies, Demolition Zombie and Grace to compensate for Headshot only mechanic -->
 	<append xpath="//entity_class[contains(@name, 'Radiated')]">
-		<property name="ExperienceGain" value="1800"/>
+		<property name="ExperienceGain" value="1800"/> <!-- default 1200 or 750 -->
 	</append>
 	<append xpath="//entity_class[
 		@name='zombieBikerRadiated' or
@@ -24,7 +25,7 @@
 		@name='zombieDemolition' or
 		@name='animalBossGrace'
 	]">
-		<property name="ExperienceGain" value="2250"/>
+		<property name="ExperienceGain" value="2250"/> <!-- default 1500 -->
 	</append>
 
 	<!-- Demolition Zombie -->
