@@ -1,27 +1,50 @@
 <root>
-	<!-- Makes all radiated be killed with headshot only undless hit with anti-rad mod -->
 
+	<!-- Radiated zombies can only be killed with headshots, unless weapon has Rad Remover -->
 	<append xpath="//entity_class[@name='playerMale']">
 		<effect_group>
 			<passive_effect name="HeadShotOnly" operation="base_set" value="1">
-				<requirement name="EntityTagCompare" target="other" tags="radiated"/>
-				<requirement name="!HasBuff" buff="buffRadiatedRegenBlock"/>
+				<requirement name="EntityTagCompare" target="other" tags="radiated,boss"/>
+				<!-- (Optionally) anti-rad mod removes it -->
+				<requirement name="!HasBuff" buff="buffRadiatedRegenBlock" target="other"/>
 			</passive_effect>
 		</effect_group>
 	</append>
 		
-		
-
-
-		<!-- 
-	<append xpath="/entity_classes">
-		<entity_class name="zombieArleneRadiated2" extends="zombieArleneRadiated">
-			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="perc_add" value="1,1"/>
-			</effect_group>
-		</entity_class>
+	<!-- 150% XP increase for radiated zombies, Demolition Zombie and Grace to compensate for Headshot only mechanic -->
+	<append xpath="//entity_class[contains(@name, 'Radiated')]">
+		<property name="ExperienceGain" value="1800"/>
 	</append>
-		 -->
+	<append xpath="//entity_class[
+		@name='zombieBikerRadiated' or
+		@name='zombieLumberjackRadiated' or
+		@name='zombieFemaleFatRadiated' or
+		@name='zombieFatHawaiianRadiated' or
+		@name='zombieFatCopRadiated' or
+		@name='zombieDemolition' or
+		@name='animalBossGrace'
+	]">
+		<property name="ExperienceGain" value="2250"/>
+	</append>
+
+	<!-- Demolition Zombie -->
+	<!-- Radiated Resistence - default .5 -->
+	<set xpath="//entity_class[@name='zombieDemolition']//property[@name='PainResistPerHit']/@value">.9</set>
+	<!-- Strong Radiated Regeneration -->
+	<append xpath="//entity_class[@name='zombieDemolition']/effect_group[@name='Base Effects']">
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</append>
+	<!-- Bonus damage to the head removed -->
+	<remove xpath="//entity_class[@name='zombieDemolition']//passive_effect[@name='DamageModifier']" />
+
+	<!-- Grace -->
+	<!-- Double Health - default 2000 -->
+	<set xpath="//entity_class[@name='animalBossGrace']//passive_effect[@name='HealthMax']/@value">4000</set>
+	<!-- Strong Radiated Regeneration -->
+	<append xpath="//entity_class[@name='animalBossGrace']/effect_group[@name='Base Effects']">
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</append>
 
 </root>

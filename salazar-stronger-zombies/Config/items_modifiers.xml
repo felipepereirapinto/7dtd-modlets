@@ -1,0 +1,6 @@
+<root>
+
+	<!-- Rad Remover works on bosses too -->
+	<set xpath="//item_modifier[@name='modGunMeleeRadRemover']//requirement/@tags">radiated,boss</set>
+
+</root>
