@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run delete && npm run copy",
     "delete": "rm -rf ../salazar-*",
-    "copy": "cp -r ./salazar-* ../",
+    "copy": "npm run copy:selected",
+    "copy:all": "cp -r ./salazar-* ../",
+    "copy:selected": "cat modlets-to-load.txt | xargs cp -rft ../",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
