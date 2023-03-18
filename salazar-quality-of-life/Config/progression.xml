@@ -3,7 +3,7 @@
   <!-- ================================================== -->
   <!-- Player Max Level -->
   
-  <!-- <setattribute xpath="//level" name="max_level">100</setattribute> -->
+  <setattribute xpath="//level" name="max_level">1000</setattribute>
 
   <!-- ================================================== -->
   <!-- Changes on Perks -->
