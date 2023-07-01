@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Craft Rotten Meat"/>
-		<Description value="Craft rotten meat with raw meat and nitrate."/>
+		<Name value="Craft Rotting Flesh"/>
+		<Description value="Craft rotting flesh with raw meat and nitrate."/>
 		<Author value="Salazar"/>
 		<Version value="1.0.0"/>
 	</ModInfo>

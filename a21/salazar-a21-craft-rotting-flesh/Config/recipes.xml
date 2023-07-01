@@ -1,0 +1,17 @@
+<root>
+
+	<append xpath="/recipes">
+		<!-- Campfire with Grill -->
+		<recipe name="foodRottingFlesh" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+			<ingredient name="foodRawMeat" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="10"/>
+		</recipe>
+
+		<!-- Chemistry Station -->
+		<recipe name="foodRottingFlesh" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="foodRawMeat" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+		</recipe>
+	</append>
+
+</root>

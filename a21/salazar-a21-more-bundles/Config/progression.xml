@@ -1,9 +1,6 @@
 <root>
 
-	<!-- ================================================== -->
-	<!-- Changes on Magazine Skills -->
-
-	<append xpath="//perk[@name='perkArtOfMiningPallets']//@tags">
+	<append xpath="//book[@name='perkArtOfMiningPallets']//@tags">
 		,resourceCrushedSandBundle
 		,resourceClayLumpBundle
 		,resourceCobblestonesBundle
@@ -12,12 +9,6 @@
 		,resourceBuckshotBundle
 		,resourceBulletCasingBundle
 		,resourceBulletTipBundle
-	</append>
-
-	<!-- ================================================== -->
-	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
-	<append xpath="//perk[@name='perkArtOfMiningPallets']//@tags">
-		,resourceBulletCasingSteelBundle
 	</append>
 
 </root>
