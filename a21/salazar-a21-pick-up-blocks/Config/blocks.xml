@@ -21,14 +21,10 @@
 	</append>
 
 	<!-- Illumination -->
-	<append xpath="//block[
-		@name='lanternDecorLight' or
-		@name='lanternLight_player']">
+	<append xpath="//block[@name='lanternDecorLight' or @name='lanternLight_player']">
 		<property name="CanPickup" value="true" param1="lanternLight_player"/>
 	</append>
-	<append xpath="//block[
-		@name='burningBarrel' or
-		@name='burningBarrelPlayer']">
+	<append xpath="//block[@name='burningBarrel' or @name='burningBarrelPlayer']">
 		<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
 	</append>
 
@@ -37,7 +33,7 @@
 		starts-with(@name, 'barbed') or
 		starts-with(@name, 'trap') or
 		starts-with(@name, 'deco') or
-		starts-with(@name, 'mattress')
+		starts-with(@name, 'mattress') or
 		starts-with(@name, 'painting') or
 		starts-with(@name, 'signPoster') or
 		starts-with(@name, 'tv') or
