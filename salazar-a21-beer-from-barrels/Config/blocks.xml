@@ -1,7 +1,0 @@
-<root>
-
-	<append xpath="//block[@name='wineBarrel']">
-		<property name="LootList" value="wineBarrel"/>
-	</append>
-	
-</root>

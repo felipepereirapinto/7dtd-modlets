@@ -1,5 +1,0 @@
-﻿Key,English
-
-RunningShoesMod,"Running Shoes Mod"
-RunningShoesModDesc,"High Performance Running Shoes mod for your boots.\nYou don't have to be the fastest, you just have to not be the slowest.\nDecreases stamina loss while sprinting."
-RunningShoesModSchematic,"Running Shoes Mod Schematic"

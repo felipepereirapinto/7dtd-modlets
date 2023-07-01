@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Cheap Crop Seeds"/>
-		<Description value="Makes seeds recipe require only one crop to craft."/>
-		<Author value="Salazar"/>
-		<Version value="1.0.0"/>
-	</ModInfo>
-</xml>

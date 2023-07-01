@@ -1,7 +1,0 @@
-<root>
-
-	<set xpath="//buff[@name='buffDrunkGrandpasMoonshine']//triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfBuffStart']">
-		<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
-	</set>
-
-</root>

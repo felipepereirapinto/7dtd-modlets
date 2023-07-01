@@ -1,5 +1,0 @@
-<root>
-
-	<set xpath="//item/property[@name='CraftingIngredientTime']/@value">0</set>
-
-</root>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Remove Quest Stay Within Objective"/>
-		<Description value="Let's players go away from quests without failing them."/>
-		<Author value="Salazar"/>
-		<Version value="1.0.0"/>
-	</ModInfo>
-</xml>

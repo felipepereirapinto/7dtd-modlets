@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Bigger Stacks"/>
-		<Description value="Tweeks to the stack size of many items and blocks."/>
-		<Author value="Salazar"/>
-		<Version value="1.0.0"/>
-	</ModInfo>
-</xml>

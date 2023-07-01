@@ -1,5 +1,0 @@
-﻿Key,english,brazilian
-
-perkLivingOffTheLandRank1LongDesc,"Double the harvest of wild or planted crops. Craft seeds for flowers and decorative plants like goldenrod, chrysanthemum, aloe, and yucca.\nFarm plots cost 30% less to craft.","Dobre a colheita de plantas selvagens ou cultivadas. Fabrique sementes de flores e plantas decorativas, como solidago, crisântemo, babosa e yucca.\nDiminui em 30% o custo de fabricação de terrenos agrícolas."
-perkLivingOffTheLandRank2LongDesc,Triple the harvest of wild or planted crops.\nYou can craft seeds for berries and vegetables.\n50% chance to harvest 1 additional crop.\nFarm plots cost 50% less to craft.,Triplique a colheita de plantas selvagens ou cultivadas.\nVocê pode fabricar sementes de frutas e legumes.\nO custo de fabricação de lotes de plantação é reduzido em 50%.
-perkLivingOffTheLandRank3LongDesc,Quadruple the harvest of wild or planted crops.,Quadruplique a colheita de plantas selvagens ou cultivadas.

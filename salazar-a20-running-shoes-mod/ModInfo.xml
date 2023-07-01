@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="Running Shoes Mod"/>
-		<Description value="Adds a new boots mod and its schematic that works like the High Performance Running Shoes."/>
-		<Author value="Salazar"/>
-		<Version value="1.0.0"/>
-	</ModInfo>
-</xml>

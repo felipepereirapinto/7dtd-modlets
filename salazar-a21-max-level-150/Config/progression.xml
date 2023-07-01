@@ -1,5 +1,0 @@
-<root>
-
-	<setattribute xpath="//level" name="max_level">150</setattribute>
-
-</root>

@@ -1,7 +1,0 @@
-<root>
-
-	<set xpath="//lootcontainer[@name='wineBarrel']">
-		<item name="drinkJarBeer" count="1,5"/>
-	</set>
-
-</root>

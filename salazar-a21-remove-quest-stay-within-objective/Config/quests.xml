@@ -1,5 +1,0 @@
-<root>
-
-	<remove xpath="//objective[contains(@type, 'StayWithin')]"/>
-
-</root>
