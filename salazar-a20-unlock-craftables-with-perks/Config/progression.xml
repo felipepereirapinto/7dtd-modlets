@@ -1,0 +1,78 @@
+<!-- Unlock Craftable resources and equipment parts with Perks -->
+<root>
+
+	<!-- ================================================== -->
+	<!-- Perception Perks -->
+
+	<append xpath="//perk[@name='perkDeadEye']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunRifleT1HuntingRifleParts" />
+	</append>
+	<append xpath="//perk[@name='perkDemolitionsExpert']//passive_effect[@name='RecipeTagUnlocked' and @level='5,5']/@tags">
+		,gunExplosivesT3RocketLauncherParts
+	</append>
+	<append xpath="//perk[@name='perkJavelinMaster']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnSpearT3SteelSpearParts" />
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Strengh Perks -->
+
+	<append xpath="//perk[@name='perkBoomstick']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunShotgunT1DoubleBarrelParts" />
+	</append>
+	<append xpath="//perk[@name='perkPummelPete']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnClubT3SteelClubParts" />
+	</append>
+	<append xpath="//perk[@name='perkSkullCrusher']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnSledgeT3SteelSledgehammerParts" />
+	</append>
+	<append xpath="//perk[@name='perkHeavyArmor']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4" value="1" tags="armorSteelSetParts" />
+	</append>
+	<append xpath="//perk[@name='perkMiner69r']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeToolAllSteelParts,meleeToolAxeT3ChainsawParts" />
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Fortitude Perks -->
+
+	<append xpath="//perk[@name='perkBrawler']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnKnucklesT3SteelKnucklesParts" />
+	</append>
+	<append xpath="//perk[@name='perkMachineGunner']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunMGT1AK47Parts" />
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Agility Perks -->
+
+	<append xpath="//perk[@name='perkArchery']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunBowT1WoodenBowParts" />
+	</append>
+	<append xpath="//perk[@name='perkGunslinger']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunHandgunT1PistolParts" />
+	</append>
+	<append xpath="//perk[@name='perkDeepCuts']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnBladeT3MacheteParts" />
+	</append>
+	<append xpath="//perk[@name='perkLightArmor']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4" value="1" tags="armorMilitarySetParts" />
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Intellect Perks -->
+
+	<append xpath="//perk[@name='perkElectrocutioner']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="meleeWpnBatonT2StunBatonParts" />
+	</append>
+	<append xpath="//perk[@name='perkTurrets']//effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="gunBotRoboticsParts" />
+	</append>
+	<append xpath="//perk[@name='perkAdvancedEngineering']//passive_effect[@name='RecipeTagUnlocked' and @level='5']/@tags">
+		,resourceElectricParts,resourceHeadlight,resourceAcid
+	</append>
+	<append xpath="//perk[@name='perkGreaseMonkey']//passive_effect[@name='RecipeTagUnlocked' and @level='5']/@tags">
+		,resourceMechanicalParts,resourceRadiator,resourceSpring,smallEngine
+	</append>
+
+</root>

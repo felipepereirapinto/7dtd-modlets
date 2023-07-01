@@ -1,0 +1,73 @@
+<root>
+
+	<!-- Crops -->
+	<append xpath="//block[starts-with(@name, 'plantedMushroom3Harvest')]">
+		<property name="DowngradeBlock" value="plantedMushroom1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedYucca3Harvest')]">
+		<property name="DowngradeBlock" value="plantedYucca1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedCotton3Harvest')]">
+		<property name="DowngradeBlock" value="plantedCotton1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedCoffee3Harvest')]">
+		<property name="DowngradeBlock" value="plantedCoffee1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedGoldenrod3Harvest')]">
+		<property name="DowngradeBlock" value="plantedGoldenrod1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedAloe3Harvest')]">
+		<property name="DowngradeBlock" value="plantedAloe1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedBlueberry3Harvest')]">
+		<property name="DowngradeBlock" value="plantedBlueberry1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedPotato3Harvest')]">
+		<property name="DowngradeBlock" value="plantedPotato1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedChrysanthemum3Harvest')]">
+		<property name="DowngradeBlock" value="plantedChrysanthemum1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedCorn3Harvest')]">
+		<property name="DowngradeBlock" value="plantedCorn1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedGraceCorn3Harvest')]">
+		<property name="DowngradeBlock" value="plantedGraceCorn1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedHop3Harvest')]">
+		<property name="DowngradeBlock" value="plantedHop1"/>
+	</append>
+	<append xpath="//block[starts-with(@name, 'plantedPumpkin3Harvest')]">
+		<property name="DowngradeBlock" value="plantedPumpkin1"/>
+	</append>
+
+	<!-- Trees -->
+	<append xpath="//block[
+		@name='treePlantedOak08m' or
+		@name='treePlantedOak16m' or
+		@name='treePlantedOak27m' or
+		@name='treePlantedOak41m']">
+		<property name="DowngradeBlock" value="treePlantedOak1m"/>
+		<property name="Class" value=""/>
+	</append>
+
+	<append xpath="//block[
+		@name='treePlantedMountainPine12m' or
+		@name='treePlantedMountainPine19m' or
+		@name='treePlantedMountainPine27m' or
+		@name='treePlantedMountainPine41m']">
+		<property name="Class" value=""/>
+		<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	</append>
+
+	<append xpath="//block[
+		@name='treePlantedWinterPine6m' or
+		@name='treePlantedWinterPine13m' or
+		@name='treePlantedWinterPine19m' or
+		@name='treePlantedWinterPine28m']">
+		<property name="Class" value=""/>
+		<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	</append>
+
+	
+</root>

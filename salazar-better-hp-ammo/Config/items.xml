@@ -1,8 +1,0 @@
-<root>
-
-	<!-- Base damage as AP ammo -->
-	<set xpath="//effect_group[@name='ammo9mmBulletHP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">38</set>
-	<set xpath="//effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">84</set>
-	<set xpath="//effect_group[@name='ammo762mmBulletHP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">57</set>
-
-</root>

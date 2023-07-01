@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Traders Opened All Day"/>
-        <Description value="Traders are open from 04:00 to 22:00."/>
-        <Author value="Salazar"/>
-        <Version value="1.0.0"/>
-    </ModInfo>
-</xml>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Beer from Barrels"/>
+		<Description value="Adds beer to the wine barrels loot table."/>
+		<Author value="Salazar"/>
+		<Version value="1.0.0"/>
+	</ModInfo>
+</xml>

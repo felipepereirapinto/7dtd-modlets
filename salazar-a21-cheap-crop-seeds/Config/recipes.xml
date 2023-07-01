@@ -1,0 +1,6 @@
+<root>
+
+	<set xpath="//recipe[starts-with(@name, 'planted')]/ingredient/@count">1</set>
+	<remove xpath="//recipe[@name='plantedMushroom1']/ingredient[@name='resourceClayLump']"/>
+
+</root>

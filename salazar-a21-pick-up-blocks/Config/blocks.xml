@@ -1,0 +1,51 @@
+<root>
+
+	<!-- Farm Plots -->
+	<remove xpath="//block[@name='farmPlotBlock']/drop[@event='Harvest']"/>
+	<append xpath="//block[@name='farmPlotBlock']">
+		<drop event="Destroy" name="farmPlotBlockVariantHelper" count="1"/>
+	</append>
+
+	<!-- Resource Piles -->
+	<append xpath="//block[
+		@name='scrapMetalPile' or
+		contains(@name,'cinderBlocks') or
+		starts-with(@name, 'hayBale')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="40"/>
+	</append>
+	<append xpath="//block[@name='driftwood']">
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="300"/>
+		<property name="Weight" value="30"/>
+	</append>
+
+	<!-- Illumination -->
+	<append xpath="//block[
+		@name='lanternDecorLight' or
+		@name='lanternLight_player']">
+		<property name="CanPickup" value="true" param1="lanternLight_player"/>
+	</append>
+	<append xpath="//block[
+		@name='burningBarrel' or
+		@name='burningBarrelPlayer']">
+		<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+	</append>
+
+	<!-- Others -->
+	<append xpath="//block[
+		starts-with(@name, 'barbed') or
+		starts-with(@name, 'trap') or
+		starts-with(@name, 'deco') or
+		starts-with(@name, 'mattress')
+		starts-with(@name, 'painting') or
+		starts-with(@name, 'signPoster') or
+		starts-with(@name, 'tv') or
+		contains(@name, 'Bed') or
+		@name='birdBathPlanter' or
+		@name='bed02'
+		]">
+		<property name="CanPickup" value="true"/>
+	</append>
+
+</root>

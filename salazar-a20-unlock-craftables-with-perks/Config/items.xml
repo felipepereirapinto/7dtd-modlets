@@ -1,0 +1,82 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Perception Perks -->
+
+	<append xpath="//item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="UnlockedBy" value="perkDeadEye"/>
+	</append>
+	<append xpath="//item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+	</append>
+	<append xpath="//item[@name='meleeWpnSpearT3SteelSpearParts']">
+		<property name="UnlockedBy" value="perkJavelinMaster"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Strengh Perks -->
+
+	<append xpath="//item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="UnlockedBy" value="perkBoomstick"/>
+	</append>
+	<append xpath="//item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="UnlockedBy" value="perkPummelPete"/>
+	</append>
+	<append xpath="//item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="UnlockedBy" value="perkSkullCrusher"/>
+	</append>
+	<append xpath="//item[@name='meleeToolAllSteelParts']">
+		<property name="UnlockedBy" value="perkHeavyArmor"/>
+	</append>
+	<append xpath="//item[@name='armorSteelSetParts' or @name='meleeToolAxeT3ChainsawParts']">
+		<property name="UnlockedBy" value="perkMiner69r"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Fortitude Perks -->
+
+	<append xpath="//item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+		<property name="UnlockedBy" value="perkBrawler"/>
+	</append>
+	<append xpath="//item[@name='gunMGT1AK47Parts']">
+		<property name="UnlockedBy" value="perkMachineGunner"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Agility Perks -->
+
+	<append xpath="//item[@name='gunBowT1WoodenBowParts']">
+		<property name="UnlockedBy" value="perkArchery"/>
+	</append>
+	<append xpath="//item[@name='gunHandgunT1PistolParts']">
+		<property name="UnlockedBy" value="perkGunslinger"/>
+	</append>
+	<append xpath="//item[@name='meleeWpnBladeT3MacheteParts']">
+		<property name="UnlockedBy" value="perkDeepCuts"/>
+	</append>
+	<append xpath="//item[@name='armorMilitarySetParts']">
+		<property name="UnlockedBy" value="perkLightArmor"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Intellect Perks -->
+
+	<append xpath="//item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="UnlockedBy" value="perkElectrocutioner"/>
+	</append>
+	<append xpath="//item[@name='gunBotRoboticsParts']">
+		<property name="UnlockedBy" value="perkTurrets"/>
+	</append>
+	<append xpath="//item[@name='resourceElectricParts' or @name='resourceHeadlight' or @name='resourceAcid']">
+		<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	</append>
+	<append xpath="//item[@name='resourceMechanicalParts' or @name='resourceRadiator' or @name='resourceSpring' or @name='smallEngine']">
+		<property name="UnlockedBy" value="perkGreaseMonkey"/>
+	</append>
+
+
+	<append xpath="//item[@name='resourceAcid']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+</root>

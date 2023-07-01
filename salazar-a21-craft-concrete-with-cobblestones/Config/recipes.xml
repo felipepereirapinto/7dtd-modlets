@@ -1,0 +1,12 @@
+<root>
+
+	<append xpath="/recipes">
+		<recipe name="resourceConcreteMix" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="1"/>
+			<ingredient name="resourceCobblestones" count="1"/>
+			<ingredient name="resourceCement" count="1"/>
+		</recipe>
+
+	</append>
+
+</root>

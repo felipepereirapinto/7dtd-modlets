@@ -1,0 +1,53 @@
+<root>
+
+	<!-- Money x100k -->
+	<set xpath="//item[
+		@name='casinoCoin' or
+		@name='oldCash'
+	]/property[@name='Stacknumber']/@value">100000</set>
+
+	<!-- Medication and Drugs x25 Stack -->
+	<set xpath="//item[
+		starts-with(@name, 'medical') or
+		starts-with(@name, 'drug')
+	]/property[@name='Stacknumber']/@value">25</set>
+
+	<!-- Food and Drinks x100 Stack -->
+	<set xpath="//item[
+		starts-with(@name, 'food') or
+		starts-with(@name, 'drink')
+	]/property[@name='Stacknumber']/@value">100</set>
+
+	<!-- Throwables x100 Stack -->
+	<set xpath="//item[
+		starts-with(@name, 'thrown')
+	]/property[@name='Stacknumber']/@value">100</set>
+
+	<!-- Ammo x500 Stack -->
+	<set xpath="//item[
+		starts-with(@name, 'ammo') and
+		@name!='ammoGasCan'
+	]/property[@name='Stacknumber']/@value">500</set>
+
+	<!-- Resources and Books x6000-->
+	<set xpath="//item[
+		@name='drinkCanEmpty' or
+		@name='drinkJarEmpty' or
+		@name='drinkJarRiverWater' or
+		@name='foodRawMeat' or
+		@name='foodRottingFlesh' or
+		@name='foodEgg' or
+		@name='foodCornMeal' or
+		@name='smallEngine' or
+		starts-with(@name, 'book') or
+		starts-with(@name, 'foodCan') or
+		starts-with(@name, 'foodCrop') or
+		starts-with(@name, 'resource') or
+		starts-with(@name, 'tool') or
+		contains(@name, 'Bundle') or
+		contains(@name, 'Parts') or
+		contains(@name, 'Schematic') or
+		contains(@name, 'SkillMagazine')
+	]/property[@name='Stacknumber']/@value">6000</set>
+
+</root>

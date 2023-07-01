@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Wheels from Wheels"/>
-        <Description value="Disassemble vehicleWheels item from decoCarWheelFlat block."/>
-        <Author value="Salazar"/>
-        <Version value="1.0.0"/>
-    </ModInfo>
-</xml>
