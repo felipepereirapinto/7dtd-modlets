@@ -1,0 +1,4 @@
+﻿Key,english,brazilian
+
+bookSkillBooksComplete, Skill Books Complete, Livros de Habilidades Completo.
+perkSkillBooksLongDesc, Unlock all skill books, Desbloqueie todos os livros de habilidades.

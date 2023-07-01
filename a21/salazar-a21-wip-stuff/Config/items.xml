@@ -1,0 +1,144 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Guns -->
+
+	<set xpath="//item[starts-with(@name, 'gunBow')]//property[@name='AutoReload']/@value">true</set>
+
+	<append xpath="//effect_group[@name='gunBowT0PrimitiveBow']">
+		<passive_effect name="EntityDamage" operation="base_add" value="0" tags="perkArchery"/>
+		<!-- damage offset, from -6 -->
+	</append>
+
+	<append xpath="//effect_group[@name='gunBowT1WoodenBow']">
+		<passive_effect name="EntityDamage" operation="base_add" value="5" tags="perkArchery"/>
+		<!-- damage offset, from 0 -->
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Shotgun Ammo with x5 range -->
+
+	<!-- Range like a gunHandgunT1Pistol -->
+	<append xpath="//effect_group[@name='ammoShotgunShell']">
+		<passive_effect name="MaxRange" operation="base_set" value="50" tags="perkBoomstick"/>
+		<!-- default 10 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="20" tags="perkBoomstick"/>
+		<!-- default 4 -->
+	</append>
+
+	<!-- Range like a gunMGT1AK47-->
+	<append xpath="//effect_group[@name='ammoShotgunSlug']">
+		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkBoomstick"/>
+		<!-- default 18 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkBoomstick"/>
+		<!-- default 9 -->
+	</append>
+
+	<append xpath="//effect_group[@name='ammoShotgunBreachingSlug']">
+		<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkBoomstick"/>
+		<!-- default 4 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkBoomstick"/>
+		<!-- default 2 -->
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Turrets -->
+
+	<!-- Junk Turret Bot -->
+	<append xpath="//item[@name='gunBotT2JunkTurret']">
+		<property name="Tags" value="turretRanged,weapon,ranged,reloadPenalty,drumMagazine,attIntellect,perkTurrets,canHaveCosmetic,bottomAttachments"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Melee weapons -->
+
+	<!-- Stone Spear -->
+	<append xpath="//effect_group[@name='meleeWpnSpearT0StoneSpear']">
+		<passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkJavelinMaster"/>
+		<!-- from 10.3-->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/>
+		<!-- from 55 -->
+	</append>
+
+	<!-- Iron Spear -->
+	<append xpath="//effect_group[@name='meleeWpnSpearT1IronSpear']">
+		<passive_effect name="EntityDamage" operation="base_set" value="30" tags="perkJavelinMaster"/>
+		<!-- from 12.4-->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/>
+		<!-- from 55 -->
+	</append>
+
+	<!-- Steel Spear -->
+	<append xpath="//effect_group[@name='meleeWpnSpearT3SteelSpear']">
+		<passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkJavelinMaster"/>
+		<!-- from 18.6 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkJavelinMaster"/>
+		<!-- from 55 -->
+	</append>
+
+	<!-- Player and Zombies reach -->
+	<!-- <set xpath="//item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.4</set> -->	<!-- from 1.65 -->
+	<!-- <set xpath="//item[@name='meleeHandPlayer']/property[@class='Action0']/property[@name='Range']/@value">1.65</set> -->	<!-- from 1.65 -->
+
+	<!-- ================================================== -->
+	<!-- Tools -->
+
+	<!-- Iron T1 Axe -->
+	<append xpath="//effect_group[@name='meleeToolAxeT1IronFireaxe']">
+		<passive_effect name="EntityDamage" operation="base_set" value="20" tags="perkMiner69r,perkDeepCuts"/>
+		<!-- from 15.1 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r,axe,perkDeepCuts"/>
+		<!-- from 60 -->
+	</append>
+
+	<!-- Steel T2 Axe -->
+	<append xpath="//effect_group[@name='meleeToolAxeT2SteelAxe']">
+		<passive_effect name="EntityDamage" operation="base_set" value="40" tags="perkMiner69r,perkDeepCuts"/>
+		<!-- from 28.9 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r,axe,perkDeepCuts"/>
+		<!-- from 47 -->
+	</append>
+
+	<!-- Chainsaw T3 Axe -->
+	<append xpath="//effect_group[@name='meleeToolAxeT3Chainsaw']">
+		<passive_effect name="EntityDamage" operation="base_set" value="20" tags="perkMiner69r"/>
+		<!-- from 6 -->
+		<passive_effect name="BlockDamage" operation="base_set" value="50" tags="perkMiner69r"/>
+		<!-- from 24.3 -->
+	</append>
+
+	<!-- Pick T3 Auger -->
+	<append xpath="//effect_group[@name='meleeToolPickT3Auger']">
+		<passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkMiner69r"/>
+		<!-- from 4.2 -->
+		<passive_effect name="BlockDamage" operation="base_set" value="50" tags="perkMiner69r"/>
+		<!-- from 20.7 -->
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Throwables -->
+
+	<!-- Molotov Cocktail - This should be working in vanilla -->
+	<append xpath="//item[@name='thrownAmmoMolotovCocktail']">
+		<property name="ExplodeOnHit" value="true"/>
+	</append>
+
+
+	<!-- ================================================== -->
+	<!-- Consumables -->
+
+	<append xpath="//item[@name='foodShamSandwich']">
+		<property name="SellableToTrader" value="true"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="Weight" value="10"/>
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Sellables -->
+
+	<append xpath="//item[@name='toolForgeCrucible']">
+		<property name="SellableToTrader" value="true"/>
+	</append>
+
+</root>

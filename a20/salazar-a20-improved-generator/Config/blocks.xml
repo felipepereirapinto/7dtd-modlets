@@ -1,0 +1,72 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Vanilla Generator -->
+	<!-- MaxFuel: 1000 -->
+	<!-- OutputPerFuel: 11250 (s) -->
+	<!-- MaxPower: 12250 (w) -->
+	<!-- OutputPerStack: 100 = 50w -->
+	<!-- MaxDamage: 1000 -->
+	<!-- EconomicValue: 500 (buy 1500c / sell 100c) -->
+
+	<!-- ================================================== -->
+	<!-- Small Generator -->
+
+	<append xpath="/blocks">
+
+		<!-- T2 - Double capacity, power, efficiency, and durability -->
+		<block name="ImprovedGeneratorT2">
+			<property name="Extends" value="generatorbank"/>
+			<property name="CustomIcon" value="questGeneratorSmall"/>
+			<property name="Model" value="Entities/Electrical/smallGeneratorPrefab"/>
+
+			<property name="MaxFuel" value="2000"/>
+			<property name="OutputPerFuel" value="22500"/>
+			<property name="OutputPerStack" value="200"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="EconomicValue" value="4000"/>
+		</block>
+
+		<!-- T3 - Quadruple capacity, power, efficiency, and durability -->
+		<block name="ImprovedGeneratorT3">
+			<property name="Extends" value="generatorbank"/>
+			<property name="CustomIcon" value="questGeneratorLarge"/>
+			<property name="Model" value="Entities/Electrical/bigGeneratorPrefab"/>
+			<property name="MultiBlockDim" value="3,2,2"/>
+
+			<property name="MaxFuel" value="4000"/>
+			<property name="OutputPerFuel" value="45000"/>
+			<property name="OutputPerStack" value="400"/>
+			<property name="MaxDamage" value="4000"/>
+			<property name="EconomicValue" value="8000"/>
+		</block>
+
+		<!-- T2 - Quadruple capacity, power, efficiency, and durability -->
+<!-- 		<block name="GeneratorSmallT2">
+			<property name="Extends" value="GeneratorSmallT1"/>
+			<property name="CustomIconTint" value="953436"/>
+			<property name="TintColor" value="953436"/>
+
+			<property name="MaxFuel" value="4000"/>
+			<property name="OutputPerFuel" value="45000"/>
+			<property name="OutputPerStack" value="400"/>
+			<property name="MaxDamage" value="4000"/>
+			<property name="EconomicValue" value="8000"/>
+		</block> -->
+
+		<!-- T3 - Octuple capacity, power, efficiency, and durability -->
+<!-- 		<block name="GeneratorSmallT3">
+			<property name="Extends" value="GeneratorSmallT1"/>
+			<property name="CustomIconTint" value="2F2F2F"/>
+			<property name="TintColor" value="2F2F2F"/>
+
+			<property name="MaxFuel" value="8000"/>
+			<property name="OutputPerFuel" value="90000"/>
+			<property name="OutputPerStack" value="800"/>
+			<property name="MaxDamage" value="8000"/>
+			<property name="EconomicValue" value="16000"/>
+		</block> -->
+
+	</append>
+
+</root>

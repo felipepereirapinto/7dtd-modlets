@@ -1,0 +1,19 @@
+<root>
+
+	<append xpath="//lootgroup[@name='groupApparelBootsShoes']">
+		<item name="RunningShoesMod" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupApparelShoesAll']">
+		<item name="RunningShoesMod" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='modArmorCosmetics']">
+		<item name="RunningShoesMod" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='schematicsModsAndGeneralT2']">
+		<item name="RunningShoesModSchematic"/>
+	</append>
+
+</root>

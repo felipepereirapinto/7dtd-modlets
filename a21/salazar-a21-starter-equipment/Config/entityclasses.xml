@@ -1,0 +1,18 @@
+<root>
+
+	<setattribute xpath="//entity_class[@name='playerMale']/property[
+		@name='ItemsOnEnterGame.GameModeSurvival' or
+		@name='ItemsOnEnterGame.GameModeSurvivalSP' or
+		@name='ItemsOnEnterGame.GameModeSurvivalMP'
+	]" name="value">
+		bedroll,
+		meleeToolFlashlight02,
+		medicalFirstAidBandage,
+		drinkJarPureMineralWater,
+		foodCanChili,
+		apparelWornBoots,
+		apparelTShirtPlain,
+		apparelDenimPants
+	</setattribute>
+
+</root>

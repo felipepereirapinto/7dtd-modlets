@@ -1,0 +1,164 @@
+<root>
+
+	<!-- ================================================== -->
+	<!-- Resource Bundles -->
+
+	<append xpath="/recipes">
+
+		<recipe name="ammoGasCanBundle" count="1" craft_time="10">
+			<ingredient name="ammoGasCan" count="10000"/>
+		</recipe>
+
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="10">
+			<ingredient name="resourceGunPowder" count="1000"/>
+		</recipe>
+
+		<recipe name="resourceCrushedSandBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCrushedSand" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceClayLump" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCobblestones" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceCementBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCement" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceConcreteMix" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBuckshot" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBulletCasing" count="6000"/>
+		</recipe>
+
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBulletTip" count="6000"/>
+		</recipe>
+
+	</append>
+
+	<!-- ================================================== -->
+	<!-- Ammo Bundles -->
+
+	<append xpath="/recipes">
+
+		<!-- Firearms Ammo Bundles -->
+		
+		<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="10">
+			<ingredient name="ammo9mmBulletBall" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="10">
+			<ingredient name="ammo9mmBulletHP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="10">
+			<ingredient name="ammo9mmBulletAP" count="100"/>
+		</recipe>
+
+		<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="10">
+			<ingredient name="ammo44MagnumBulletBall" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="10">
+			<ingredient name="ammo44MagnumBulletHP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="10">
+			<ingredient name="ammo44MagnumBulletAP" count="100"/>
+		</recipe>
+
+		<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="10">
+			<ingredient name="ammo762mmBulletBall" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="10">
+			<ingredient name="ammo762mmBulletHP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="10">
+			<ingredient name="ammo762mmBulletAP" count="100"/>
+		</recipe>
+
+		<recipe name="ammoBundleShotgunShell" count="1" craft_time="10">
+			<ingredient name="ammoShotgunShell" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="10">
+			<ingredient name="ammoShotgunSlug" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="10">
+			<ingredient name="ammoShotgunBreachingSlug" count="100"/>
+		</recipe>
+
+		<!-- Turret Ammo Bundles -->
+		<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="10">
+			<ingredient name="ammoJunkTurretRegular" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="10">
+			<ingredient name="ammoJunkTurretShell" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="10">
+			<ingredient name="ammoJunkTurretAP" count="1000"/>
+		</recipe>
+
+		<!-- Arrow Bundles -->
+		<recipe name="ammoBundleArrowFlaming" count="1" craft_time="10">
+			<ingredient name="ammoArrowFlaming" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleArrowExploding" count="1" craft_time="10">
+			<ingredient name="ammoArrowExploding" count="75"/>
+		</recipe>
+		<recipe name="ammoBundleArrowIron" count="1" craft_time="10">
+			<ingredient name="ammoArrowIron" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="10">
+			<ingredient name="ammoArrowSteelAP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="10">
+			<ingredient name="ammoArrowStone" count="100"/>
+		</recipe>
+
+		<!-- Bolts Bundles -->
+		<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="10">
+			<ingredient name="ammoCrossbowBoltFlaming" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="10">
+			<ingredient name="ammoCrossbowBoltExploding" count="75"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="10">
+			<ingredient name="ammoCrossbowBoltIron" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="10">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="10">
+			<ingredient name="ammoCrossbowBoltStone" count="100"/>
+		</recipe>
+
+	</append>
+
+	<!-- ================================================== -->
+	<!-- KHA20-SteelAmmo Bundles (must have it installed) -->
+	<!-- 
+	<append xpath="/recipes">
+		<recipe name="resourceBulletCasingSteelBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceBulletCasingSteel" count="6000"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletSteel" count="1" craft_time="10">
+			<ingredient name="ammo9mmBulletSteel" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletSteel" count="1" craft_time="10">
+			<ingredient name="ammo44MagnumBulletSteel" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletFMJSteel" count="1" craft_time="10">
+			<ingredient name="ammo762mmBulletFMJSteel" count="100"/>
+		</recipe>
+	</append>
+	-->
+
+
+</root>

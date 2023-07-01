@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Craft Concrete with Cobblestones"/>
+		<Description value="Use either small stones or cobblestones to craft concrete in the cement mixer"/>
+		<Author value="Salazar"/>
+		<Version value="1.0.0"/>
+	</ModInfo>
+</xml>

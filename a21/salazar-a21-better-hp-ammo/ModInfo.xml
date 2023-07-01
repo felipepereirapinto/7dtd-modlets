@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Better HP Ammo"/>
+		<Description value="HP ammo has same damage as AP ammo, costs more gun powder, but less bullet tips."/>
+		<Author value="Salazar"/>
+		<Version value="1.0.0"/>
+	</ModInfo>
+</xml>

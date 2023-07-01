@@ -1,0 +1,3 @@
+﻿Key,english,brazilian
+
+key_name,english_translated,brazilian_translated

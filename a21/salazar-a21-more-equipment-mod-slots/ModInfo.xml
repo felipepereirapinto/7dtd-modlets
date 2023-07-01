@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="More Equipment Mod Slots"/>
+		<Description value="Makes the equipment mod slots equal to their level."/>
+		<Author value="Salazar"/>
+		<Version value="1.0.0"/>
+	</ModInfo>
+</xml>

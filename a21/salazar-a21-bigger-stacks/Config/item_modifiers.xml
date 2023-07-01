@@ -1,0 +1,8 @@
+<root>
+
+	<!-- Dyes -->
+	<append xpath="//item_modifier[contains(@name,'Dye')]">
+		<property name="Stacknumber" value="6000"/>
+	</append>
+
+</root>

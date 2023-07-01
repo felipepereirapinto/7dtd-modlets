@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Remove Starter Quest"/>
+		<Description value="Start the game with the bonus 4 perk points, but without the starter quest. Non mandatory find trader quest is still available."/>
+		<Author value="Salazar"/>
+		<Version value="1.0.0"/>
+	</ModInfo>
+</xml>

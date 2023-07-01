@@ -1,0 +1,9 @@
+<root>
+
+	<!-- Increase damage for Demotion Zombie and Grace -->
+	<!-- Feral Bear Damage - default 20 -->
+	<set xpath="//item[@name='meleeHandZombieDemolition']//property[@name='DamageEntity']/@value">70</set>
+	<!-- Feral Bear Damage - default 35 -->
+	<set xpath="//item[@name='meleeHandBossGrace']//property[@name='DamageEntity']/@value">70</set>
+
+</root>

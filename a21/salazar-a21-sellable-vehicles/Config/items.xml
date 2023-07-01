@@ -1,0 +1,7 @@
+<root>
+
+	<append xpath="//item[starts-with(@name, 'vehicle')]">
+		<property name="SellableToTrader" value="true"/>
+	</append>
+
+</root>
